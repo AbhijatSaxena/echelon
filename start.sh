@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-PORT=1202 nodemon server.js
+PORT=1202 nodemon server/server.js
