@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "author": "abhijat.saxena",
   "license": "MIT",
@@ -13,5 +13,9 @@
     "express": "^4.15.3",
     "lodash": "^4.17.4",
     "mongodb": "^2.2.30"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0"
   }
 }

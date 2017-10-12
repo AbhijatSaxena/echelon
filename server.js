@@ -1,8 +1,8 @@
 //Requires
-const express = require('express');
-const mongoClient = require('mongodb').MongoClient;
-const bodyParser = require('body-parser');
-const _ = require('lodash');
+var express = require('express');
+var mongoClient = require('mongodb').MongoClient;
+var bodyParser = require('body-parser');
+var _ = require('lodash');
 
 function generateGUID() {
     var result, i, j;
@@ -18,7 +18,7 @@ function generateGUID() {
 }
 
 //App
-const app = express();
+var app = express();
 app.use(bodyParser.json());
 
 //DB
@@ -61,9 +61,9 @@ app.put('/system.collection/rename', function (req, res) {
 app.delete('/system.collection/:collectionName', function (req, res) {
     db.collection(req.params.collectionName).drop(function (err) {
         if (!err) {
-            res.send(req.params.collectionName + ' Successfully Dropped')
+            res.send(req.params.collectionName + ' Successfully Dropped');
         } else {
-            res.send('Error in Dropping')
+            res.send('Error in Dropping');
         }
     });
 });
