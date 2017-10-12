@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "grunt test"
+    "build": "grunt build"
   },
   "author": "abhijat.saxena",
   "license": "MIT",
