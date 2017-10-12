@@ -1,2 +1,2 @@
-# echelon
-Dynamic Node Server with MongoLab as it's cloud storage
+# Echelon
+Dynamic Node Server with MLabs (mongodb) as it's cloud storage
