@@ -18,7 +18,7 @@ function generateGUID() {
 }
 
 //App
-var app = express()
+var app = express();
 app.use(bodyParser.json());
 
 //DB
